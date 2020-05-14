@@ -1,0 +1,13 @@
+# An Individual Key
+
+12 Equidistant keys. Within each key a subset or mirror-image in minor.
+
+Each key needs a grid, for chord types.
+
+
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Chord Flavors
+
+## Color Maps

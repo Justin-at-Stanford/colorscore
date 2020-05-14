@@ -1,0 +1,22 @@
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
+
+
+
+## not sure where "references/citations are ACTUALLY stored, but once you figure that out be sure to cite the following:
+
+Discussion of musical valence, 7ths above Majors above minor chords:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5717663/
+
+
+##Within HUMDRUM discussion, particular the use of all **harm mappings, the full summary of **harm signifiers
+https://www.humdrum.org/rep/harm/
+
+
+Earlier in Music intro when describing chordal analysis, make sure that the chord groupings you settle on align with the eventual ones that can be exploited using HUMDRUM - specificially what is discussed in how the **HARM function deciphers harmonics as here:
+https://www.humdrum.org/rep/harm/
+
+
+And early in HUMDRUM mapping, reference back to original harmonic discussion for how chord types are extrapolated and displayed:
+https://www.humdrum.org/rep/harm/

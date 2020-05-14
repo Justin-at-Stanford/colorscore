@@ -1,0 +1,91 @@
+# (PART) COLOR {-}
+# Color Introduction {#colorintro}
+
+
+First explain color spaces, perceptual differences, color space, and need for human-based perception spreads for differences. 
+
+That leads to HSLuv
+
+https://www.boronine.com/2012/03/26/Color-Spaces-for-Human-Beings/
+
+https://www.hsluv.org/comparison/
+
+And then eventually to a 12-equally-perceived steps around the HSLuv space, which is NOT +30 degrees each shift. Rather it is based on finding the CIECAM surface color white limits, and then interpolating remaining steps, to get 12 spread out HUE markers. These end up as 
+356
+44
+65
+87
+111
+137
+166
+196
+232
+267
+288
+308
+
+
+
+Then, working those 12 steps back into HSLuv, I can find equally-stepped changes by Saturation x Lightness. Rather than have too fine grained differences, I split out four different groups at saturations
+99
+88
+65
+44
+
+And crossed that with 7 steps worth of Lightness variations
+92
+85
+72
+50
+40
+32
+25
+
+
+Within any column of 85 lightness and 88 saturation for example, you get 12 equally-stepped coded values walked over to HEX values:
+
+#fac8d3
+#facba7
+#fbd155
+#d8dc4a
+#a4e74a
+#4bf089
+#4eebc9
+#51e7ed
+#acdbfa
+#d1d0f9
+#e4caf9
+#f9c0f8
+
+
+But there's no reason that this set of 12 values (85 lightness, 88 saturation) is the right particular set of colors for any one musical concept (key, major chords, diminished 7ths, etc.). It is however equally spaced, so provides a building block toward doing just that.
+
+
+I then had to consider setting boundary limits, to avoid combinations of too light or too dark, as well as combinations of too saturated or too-undersaturated, in terms of percievable color differentiation.
+
+
+
+
+
+
+
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(colorintro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
