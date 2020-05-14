@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589495314220.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1677549558",
+    "id" : "AC0D2774",
+    "lastKnownWriteTime" : 1587483390,
+    "last_content_update" : 1587483390,
+    "path" : "~/R/colorscore/bookdown-colorscore-master/.travis.yml",
+    "project_path" : "bookdown-colorscore-master/.travis.yml",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}
